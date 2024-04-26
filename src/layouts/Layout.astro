@@ -17,7 +17,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <!-- back to top button -->
-    <style>
+    <style is:global>
       .back-to-top {
         position: fixed;
         bottom: 20px;
@@ -29,11 +29,23 @@ const { title } = Astro.props;
         width: 40px;
         height: 40px;
         font-size: 1.5rem;
+        z-index: 999;
         display: flex;
         cursor: pointer;
         justify-content: center;
         align-items: center;
         transition: background-color 0.3s;
+      }
+      /* scroll bar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #ffffffac;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000000;
+        border-radius: 100px;
       }
     </style>
   </head>
