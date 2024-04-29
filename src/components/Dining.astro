@@ -1,37 +1,47 @@
 <div class="text-black py-10 mx-auto px-5">
-  <h1 class="font-bold text-4xl my-5 text-center">Embark on a Culinary Adventure</h1>
+  <h1 class="font-bold text-4xl my-5 text-center">
+    Embark on a Culinary Adventure
+  </h1>
   <p class="max-w-[900px] mx-auto text-center mb-10">
-        Immerse yourself in a world of exquisite flavors at our diverse
-        collection of restaurants and bars. Whether you crave a romantic evening
-        under the stars or a vibrant social gathering, we offer the perfect
-        setting to tantalize your taste buds and create unforgettable memories.
+    Immerse yourself in a world of exquisite flavors at our diverse collection
+    of restaurants and bars. Whether you crave a romantic evening under the
+    stars or a vibrant social gathering, we offer the perfect setting to
+    tantalize your taste buds and create unforgettable memories.
   </p>
 
-  <div class="swiper mySwiper2 my-10 container mx-auto   md:px-20">
-    <div class="swiper-wrapper mb-10">
+  <div class="swiper mySwiper2 my-10 container mx-auto md:px-20">
+    <div class="swiper-wrapper mb-10 h-full">
       <div class="swiper-slide">
-        <div class="flex gap-32 flex-col lg:flex-row">
+        <div class="flex gap-10 lg:gap-32 flex-col lg:flex-row h-full">
           <div class="flex-1 lg:px-20">
-            <img src="/media/dining7.jpg" alt="" class="flex-1 w-full aspect-square object-cover rounded-full">
+            <img
+              src="/media/dining7.jpg"
+              alt=""
+              class="flex-1 w-full aspect-square object-cover rounded-full"
+            />
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h2 class="font-bold text-4xl">Culinary Delights</h2>
             <p class="mt-5 text-lg text-justify">
-            Savor the flavors of the world at our diverse collection of
-            restaurants and bars. From casual poolside dining to romantic
-            candlelit dinners, we offer a variety of culinary experiences to
-            suit every taste.
+              Savor the flavors of the world at our diverse collection of
+              restaurants and bars. From casual poolside dining to romantic
+              candlelit dinners, we offer a variety of culinary experiences to
+              suit every taste.
             </p>
           </div>
         </div>
       </div>
 
       <div class="swiper-slide">
-        <div class="flex gap-32 flex-col lg:flex-row">
+        <div class="flex gap-10 lg:gap-32 flex-col lg:flex-row h-full">
           <div class="flex-1 lg:px-20">
-            <img src="/media/dining5.jpg" alt="" class="flex-1 w-full aspect-square object-cover rounded-full">
+            <img
+              src="/media/dining5.jpg"
+              alt=""
+              class="flex-1 w-full aspect-square object-cover rounded-full"
+            />
           </div>
-          <div class=" flex-1 flex flex-col justify-center">
+          <div class="flex-1 flex flex-col justify-center">
             <h2 class="font-bold text-4xl">Signature Cocktails</h2>
             <p class="mt-5 text-lg text-justify">
               Indulge in a refreshing cocktail at one of our stylish bars. From
@@ -42,30 +52,40 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="flex gap-32 flex-col lg:flex-row">
+        <div class="flex gap-10 lg:gap-32 flex-col lg:flex-row h-full">
           <div class="flex-1 lg:px-20">
-            <img src="/media/dining8.jpg" alt="" class="flex-1 w-full aspect-square object-cover rounded-full">
+            <img
+              src="/media/dining8.jpg"
+              alt=""
+              class="flex-1 w-full aspect-square object-cover rounded-full"
+            />
           </div>
-          <div class=" flex-1 flex flex-col justify-center">
+          <div class="flex-1 flex flex-col justify-center">
             <h2 class="font-bold text-4xl">Live Music Nights</h2>
             <p class="mt-5 text-lg text-justify">
-              Enjoy live music and entertainment at our vibrant bars and lounges. From acoustic guitar to DJ sets, we offer a variety of musical experiences to enhance your evening.
+              Enjoy live music and entertainment at our vibrant bars and
+              lounges. From acoustic guitar to DJ sets, we offer a variety of
+              musical experiences to enhance your evening.
             </p>
           </div>
         </div>
       </div>
-      
+
       <div class="swiper-slide">
-        <div class="flex gap-32 flex-col lg:flex-row">
+        <div class="flex gap-10 md:gap-32 flex-col lg:flex-row h-full">
           <div class="flex-1 lg:px-20">
-            <img src="/media/dining6.jpg" alt="" class="flex-1 w-full aspect-square object-cover rounded-full">
+            <img
+              src="/media/dining6.jpg"
+              alt=""
+              class="flex-1 w-full aspect-square object-cover rounded-full"
+            />
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h2 class="font-bold text-4xl">Special Events</h2>
             <p class="mt-5 text-lg text-justify">
-              Join us for special events and themed evenings throughout the year.
-              From wine tastings to holiday celebrations, we offer a variety of
-              exciting experiences to enhance your stay.
+              Join us for special events and themed evenings throughout the
+              year. From wine tastings to holiday celebrations, we offer a
+              variety of exciting experiences to enhance your stay.
             </p>
           </div>
         </div>
@@ -116,6 +136,9 @@
       --swiper-navigation-size: 30px !important;
     }
     .swiper-slide {
+      height: 100% !important;
+      min-height: 600px !important;
+      width: 100% !important;
       background-color: white;
     }
     .swiper-slide img {
@@ -140,52 +163,44 @@
       background-color: rgba(0, 0, 0, 0.75);
       border-radius: 50%;
     }
-    @media (min-width: 1024px){
-      .swiper-button-prev{
-      left: 0;
-
+    @media (min-width: 1024px) {
+      .swiper-button-prev {
+        left: 0;
+      }
+      .swiper-button-next {
+        left: 48%;
+      }
     }
-    .swiper-button-next {
-      left: 48%;
-    }
-    }
-    @media (max-width:1024px){
-      .swiper-button-prev{
+    @media (max-width: 1024px) {
+      .swiper-button-prev {
         left: 0 !important;
-       top: 35%;
-
+        top: 35%;
       }
       .swiper-button-next {
         right: 0 !important;
         top: 35%;
-
       }
     }
     @media (max-width: 768px) {
-        .swiper-button-prev{
+      .swiper-button-prev {
         left: 0 !important;
-       top: 30%;
-
+        top: 30%;
       }
       .swiper-button-next {
         right: 0 !important;
         top: 30%;
-
       }
-    
-  }
-  @media (max-width: 468px) {
-        .swiper-button-prev{
+    }
+    @media (max-width: 468px) {
+      .swiper-button-prev {
         left: 0 !important;
-       top: 26%;
-
+        top: 26%;
       }
       .swiper-button-next {
         right: 0 !important;
         top: 26%;
-
       }
-  }
+    }
   </style>
   <link
     rel="stylesheet"
@@ -211,8 +226,6 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      
     });
   </script>
-
 </div>
